@@ -215,10 +215,35 @@ System.register("modal", [], function (exports_3, context_3) {
         }
     };
 });
-System.register("index", ["data", "modal"], function (exports_4, context_4) {
+System.register("test", [], function (exports_4, context_4) {
+    "use strict";
+    var UserClass, nurbek;
+    var __moduleName = context_4 && context_4.id;
+    return {
+        setters: [],
+        execute: function () {
+            UserClass = /** @class */ (function () {
+                function UserClass(id, name, image, status) {
+                    this.id = id;
+                    this.name = name;
+                    this.image = image;
+                    this.status = status;
+                }
+                return UserClass;
+            }());
+            // Create a new User object
+            nurbek = [
+                new UserClass(1, 'Nurbek', 'https://example.com/avatar.jpg', 'Active'),
+                new UserClass(1, 'Nurbek', 'https://example.com/avatar.jpg', 'Active'),
+                new UserClass(1, 'Nurbek', 'https://example.com/avatar.jpg', 'Active')
+            ];
+        }
+    };
+});
+System.register("index", ["data", "modal"], function (exports_5, context_5) {
     "use strict";
     var data_1, modal_1, categoriesContainer, productsContainer, selectedCategory, renderCategories, renderProducts;
-    var __moduleName = context_4 && context_4.id;
+    var __moduleName = context_5 && context_5.id;
     return {
         setters: [
             function (data_1_1) {

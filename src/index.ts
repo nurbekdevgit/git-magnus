@@ -1,6 +1,7 @@
 import { categories, products } from "./data";
 import { Category } from "./type";
 import { productModal } from "./modal";
+import { } from "./test"
 
 const categoriesContainer = document.querySelector("#categories");
 const productsContainer = document.querySelector("#products");
