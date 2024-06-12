@@ -81,3 +81,6 @@ window.onload = () => {
   renderCategories();
   renderProducts();
 };
+
+
+
